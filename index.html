@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VidFetch Pro | Ultra HD Video Downloader</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+      <video autoplay muted loop>
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-wavy-line-18906-large.mp4"
+          type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo">
+        <i class="fas fa-cloud-download-alt"></i>
+        Vid<span>Fetch</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#features">Features</a>
+        <a href="#compatibility">Devices</a>
+        <a href="#footer">Contact</a>
+      </nav>
+
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#features">Features</a>
+        <a href="#compatibility">Devices</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 data-aos="fade-up">Download Videos in Ultra HD Quality</h1>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Fast, free and secure video downloader for all major platforms. No
+        registration required.
+      </p>
+
+      <div class="download-form" data-aos="fade-up" data-aos-delay="200">
+        <input
+          type="text"
+          class="url-input"
+          placeholder="Paste video URL here (e.g., YouTube, Instagram, TikTok...)" />
+        <button class="download-btn">
+          <i class="fas fa-download"></i> Download
+        </button>
+      </div>
+
+      <!-- Video Preview Container -->
+      <div class="video-preview-container">
+        <div class="video-preview">
+          <div class="video-wrapper">
+            <iframe class="video-iframe" allowfullscreen></iframe>
+          </div>
+          <div class="video-info">
+            <h3 class="video-title">Video Title</h3>
+            <div class="video-meta">
+              <span><i class="fas fa-eye"></i> 1.2M views</span>
+              <span><i class="fas fa-thumbs-up"></i> 45K likes</span>
+              <span><i class="fas fa-clock"></i> 5:30</span>
+            </div>
+            <div class="quality-options">
+              <h4>Select Quality:</h4>
+              <div class="quality-buttons">
+                <!-- Quality buttons will be added dynamically -->
+              </div>
+            </div>
+            <div class="download-actions">
+              <button class="action-btn cancel-action">
+                <i class="fas fa-times"></i> Cancel
+              </button>
+              <button class="action-btn download-action">
+                <i class="fas fa-download"></i> Download Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Processing your request...</p>
+      </div>
+
+      <div class="alert alert-success">
+        <i class="fas fa-check-circle"></i>
+        <div class="alert-content">
+          <h3>Success!</h3>
+          <p>Your video is ready to download.</p>
+        </div>
+      </div>
+
+      <div class="alert alert-error">
+        <i class="fas fa-exclamation-circle"></i>
+        <div class="alert-content">
+          <h3>Error!</h3>
+          <p>Please enter a valid video URL from a supported platform.</p>
+        </div>
+      </div>
+
+      <div class="alert alert-warning">
+        <i class="fas fa-exclamation-triangle"></i>
+        <div class="alert-content">
+          <h3>Warning!</h3>
+          <p>This video is protected and cannot be downloaded.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supported Platforms -->
+    <section class="platforms" id="platforms">
+      <h2 class="section-title" data-aos="fade-up">Supported Platforms</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        We support downloading from all major video platforms
+      </p>
+
+      <div class="platform-icons">
+        <div
+          class="platform-icon youtube"
+          data-aos="fade-up"
+          data-aos-delay="200">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div
+          class="platform-icon instagram"
+          data-aos="fade-up"
+          data-aos-delay="300">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div
+          class="platform-icon facebook"
+          data-aos="fade-up"
+          data-aos-delay="400">
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div
+          class="platform-icon tiktok"
+          data-aos="fade-up"
+          data-aos-delay="500">
+          <i class="fab fa-tiktok"></i>
+        </div>
+        <div
+          class="platform-icon twitter"
+          data-aos="fade-up"
+          data-aos-delay="600">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div
+          class="platform-icon vimeo"
+          data-aos="fade-up"
+          data-aos-delay="700">
+          <i class="fab fa-vimeo"></i>
+        </div>
+        <div
+          class="platform-icon dailymotion"
+          data-aos="fade-up"
+          data-aos-delay="800">
+          <i class="fab fa-dailymotion"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+      <h2 class="section-title" data-aos="fade-up">Why Choose VidFetch?</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        The best video downloading experience you'll ever have
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>Ultra Fast</h3>
+          <p>
+            Download videos at lightning speed with our optimized servers and
+            advanced technology.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>Secure</h3>
+          <p>
+            Your data is always protected. We don't store or share your download
+            history.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <h3>Free Forever</h3>
+          <p>
+            No hidden charges or subscriptions. Enjoy unlimited downloads for
+            free.
+          </p>
+        </div>
+
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3>No Signup</h3>
+          <p>
+            Start downloading immediately without any registration or login
+            required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section class="compatibility" id="compatibility">
+      <h2 class="section-title" data-aos="fade-up">Works Everywhere</h2>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Access VidFetch from any device
+      </p>
+
+      <div class="devices">
+        <div class="device" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile</h3>
+          <p>Fully responsive design works perfectly on all smartphones.</p>
+        </div>
+
+        <div class="device" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-tablet-alt"></i>
+          <h3>Tablet</h3>
+          <p>Optimized interface for tablet users with larger screens.</p>
+        </div>
+
+        <div class="device" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-laptop"></i>
+          <h3>Desktop</h3>
+          <p>Full-featured experience for desktop and laptop users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="200">
+          <h3>VidFetch</h3>
+          <p>
+            The fastest and most secure video downloader on the web. Download
+            videos from all major platforms in HD quality.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="300">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#platforms">Platforms</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#compatibility">Devices</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="400">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">DMCA</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column" data-aos="fade-up" data-aos-delay="500">
+          <h3>Contact</h3>
+          <ul>
+            <li><i class="fas fa-envelope"></i> support@vidfetch.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Tech Street, Silicon
+              Valley
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" data-aos="fade-up" data-aos-delay="600">
+        <p>&copy; 2023 VidFetch. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Download Button (Mobile) -->
+    <div class="floating-download-btn">
+      <i class="fas fa-download"></i>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
